@@ -83,7 +83,7 @@ pipeline {
                           sh 'git add .'
                           sh 'git branch'
                           sh 'git config --list'
-                          sh "git remote set-url origin https://${PAT}@github.com/irschad/deploy-to-eks-from-jenkins.git"
+                          sh "git remote set-url origin https://${PAT}@github.com/irschad/complete-ci-cd-eks-dockerhub.git"
                           sh "git commit -m 'ci: version bump'"
                           sh 'git push origin HEAD:master'
                     }
